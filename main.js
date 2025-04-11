@@ -8,7 +8,7 @@ const colorLabel = document.getElementById("color");
 
 const apiURL = "https://playerdb.co/api/player/minecraft/";
 
-const barWidth = 80*4; // in pixels
+const barWidth = 74*4; // in pixels
 var mouseX = 0;
 
 async function onLoad() {
