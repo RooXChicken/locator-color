@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(61, 0, 56);
+    color: rgb(255, 255, 255);
+
+    font-family: 'Winky Sans';
+    font-weight: 700;
+
+    max-height: fit-content;
+    --icon-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+}
+
+#mainContent {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    
+    background-color: rgba(0,0,0, 0.35);
+    border-radius: 24px 24px 24px 24px;
+    padding: 12px;
+    width: fit-content;
+
+    margin: auto;
+    margin-top: 48px;
+}
+
+#inputLabel {
+    margin: auto;
+}
+
+#userInput {
+    border-radius: 12px 12px 12px 12px;
+    border-style: solid;
+    border-color: rgb(255, 117, 209);
+
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+
+    max-width: 688px;
+    width: 346px;
+    font-size: 20px;
+    margin: auto;
+
+    font-family: 'Winky Sans';
+}
+
+large {
+    font-size: 32px;
+}
+
+medium {
+    font-size: 24px;
+
+}
+
+small {
+    font-size: 20px;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+#iconTint {
+    position: absolute;
+
+    max-width: 24px;
+    max-height: 24px;
+
+    background-color: var(--icon-color);
+    clip-path: rect(4px 20px 20px 4px);
+
+    z-index: 2;
+}
+
+#icon {
+    width: 24px;
+    height: 24px;
+
+    mix-blend-mode: multiply;
+}
+
+#iconOutline {
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+}
+
+#bar {
+    top: 0;
+    width: 376px;
+    height: 20px;
+
+    margin: auto;
+    margin-top: 32px;
+}
+
+#color {
+    background-color: var(--icon-color);
+    color: var(--text-color);
+    margin: auto;
+
+    padding: 2px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+a {
+    color: inherit;
+    max-width: fit-content;
+}
+
+.label {
+    background-color: rgba(0,0,0, 0.35);
+    padding: 8px;
+    width: fit-content;
+    
+    border-radius: 12px 12px 12px 12px;
+}
