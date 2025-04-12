@@ -79,6 +79,11 @@ function setColor(_r, _g, _b) {
 
     document.body.style.setProperty("--text-color", `rgb(${_textColor}, ${_textColor}, ${_textColor})`);
 
+    let _colors = getHex(_r, _g, _b);
+    colorLabel.innerText = `#${_colors[0]}${_colors[1]}${_colors[2]}`;
+}
+
+function getHex(_r, _g, _b) {
     // a fix because javascript doesn't have a trailing 0 when converting to hex
     let _colors = [_r, _g, _b];
     for(let i = 0; i < 3; i++) {
@@ -90,7 +95,7 @@ function setColor(_r, _g, _b) {
         _colors[i] = _hex;
     }
 
-    colorLabel.innerText = `#${_colors[0]}${_colors[1]}${_colors[2]}`;
+    return _colors;
 }
 
 // Minecraft uses the UUID of the player to determine their color
