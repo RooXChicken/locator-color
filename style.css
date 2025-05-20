@@ -108,6 +108,7 @@ img {
 }
 
 a {
+    display: block;
     color: inherit;
     max-width: fit-content;
 }
@@ -118,4 +119,8 @@ a {
     width: fit-content;
     
     border-radius: 12px 12px 12px 12px;
+}
+
+.footer {
+    margin: auto;
 }
